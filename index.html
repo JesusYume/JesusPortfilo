@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/star-wars" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="stylesheet/stars.css">
+    <link rel="stylesheet" href="stylesheet/styles.css">
+    <title>Jesus's Portfilo</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="stars"></div>
+    </div>
+
+    <section class="intro">
+        Welcome to...
+    </section>
+    
+    <section class="title">
+        <h1>Jesus's <br/> Portfilo!</h1>
+    </sectionc>
+
+    <div id="counter">13</div>
+    <script>
+        setInterval(function() {
+            var div = document.querySelector("#counter");
+            var count = div.textContent * 1 - 1;
+            div.textContent = count;
+            if (count <= 0) {
+                window.location.replace("homepage.html");
+            }
+        }, 1000);
+    </script>
+
+    <script src="sprite.js"></script>
+</body>
+</html>
